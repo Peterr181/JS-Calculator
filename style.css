@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "League Spartan", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(222, 26%, 31%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calc__container {
+  width: 50rem;
+  height: 100%;
+
+  font-size: 3rem;
+  color: #fff;
+}
+
+.calc__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.theme__container {
+  display: flex;
+  gap: 1rem;
+}
+
+.theme__container {
+  display: flex;
+  align-items: center;
+}
+
+.calc__body {
+  background-color: hsl(223, 31%, 20%);
+  border-radius: 11px;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+}
+
+.screen {
+  width: 50rem;
+  background-color: hsl(224, 36%, 15%);
+  border-radius: 11px;
+  margin-bottom: 3rem;
+}
+#screen {
+  width: 100%;
+  height: 8rem;
+  border-radius: 11px;
+  border: none;
+  background-color: hsl(224, 36%, 15%);
+  margin-bottom: 2rem;
+}
+
+.btn {
+  width: 50rem;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  /* display: flex;
+  flex-flow: wrap; */
+}
+button {
+  padding: 1.6rem;
+
+  width: 9rem;
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 0px 5px 0px 0px hsl(28, 16%, 65%);
+  margin: 8px 11px;
+  background-color: hsl(30, 25%, 89%);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: hsl(221, 14%, 31%);
+}
+
+.reset,
+.equal {
+  width: 200px;
+}
+
+.reset {
+  background-color: hsl(225, 21%, 49%);
+  color: #fff;
+  box-shadow: 0px 5px 0px 0px hsl(224, 28%, 35%);
+}
+
+.equal {
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0px 5px 0px 0px hsl(6, 70%, 34%);
+}
+.del {
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0px 5px 0px 0px hsl(224, 28%, 35%);
+  color: #fff;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  letter-spacing: 12px;
+  font-size: 1.4rem;
+}
+
+#one,
+#two,
+#three {
+  cursor: pointer;
+}
+
+.control p {
+  text-align: right;
+  margin-right: 8rem;
+}
+
+.control #circle {
+  width: 15px;
+  height: 15px;
+  background-color: hsl(6, 63%, 50%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 30px;
+}
+.control .box {
+  width: 60px;
+  height: 15px;
+  background-color: hsl(224, 36%, 15%);
+  border-radius: 30px;
+  margin-left: 4px;
+  position: relative;
+  margin-left: auto;
+  transform: translateY(-25px);
+}
+
+.header {
+  transform: translateY(56px);
+}
+
+.inputtext {
+  font-size: 4rem;
+  text-align: right;
+  color: #fff;
+  font-weight: 600;
+  padding-right: 3rem;
+}
+
+.current-operand {
+  text-align: right;
+  display: flex;
+  justify-content: right;
+  transform: translateY(10px);
+  margin-right: 20px;
+}
+
+.previous-operand {
+  text-align: right;
+  margin-right: 30px;
+  color: grey;
+  opacity: 0.2;
+}
+
+.theme {
+  text-transform: uppercase;
+}
+
+.active1 {
+  background-color: hsl(30, 25%, 89%);
+}
+
+.active2 {
+  background-color: hsl(268, 75%, 9%);
+}
